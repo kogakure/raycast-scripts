@@ -14,6 +14,12 @@
 # @raycast.author Stefan Imhoff
 # @raycast.authorURL https://www.stefanimhoff.de
 
+open https://www.imdb.com/list/ls000151991/export
+open https://www.imdb.com/user/ur15936207/ratings/export
+open https://www.imdb.com/list/ls066264596/export
+
+sleep 15
+
 TARGET="$(date +"%Y-%m-%d")"
 
 cd ~/Downloads
