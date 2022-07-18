@@ -10,7 +10,7 @@
 # @raycast.needsConfirmation true
 
 # Documentation:
-# @raycast.description Shut down all work related apps at the end of the day
+# @raycast.description Shut down all work related apps at the end of the day and disconnect the VPN
 # @raycast.author Stefan Imhoff
 # @raycast.authorURL https://www.stefanimhoff.de
 
@@ -22,5 +22,7 @@ repeat with workApp in workApps
     quit
   end tell
 end repeat
+
+do shell script "scutil --nc stop 'NWSE AMS1 VPN'"
 
 log "Feierabend! 🍺"
