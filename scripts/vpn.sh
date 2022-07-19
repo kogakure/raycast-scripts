@@ -17,7 +17,9 @@ VPN="NWSE AMS1 VPN"
 
 if scutil --nc status "$VPN" | grep -q Connected; then
   scutil --nc stop "$VPN"
+	echo "VPN disconnected"
 else
   scutil --nc start "$VPN"
+	echo "VPN connected"
 fi
 
