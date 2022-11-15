@@ -15,7 +15,7 @@
 # @raycast.authorURL https://www.stefanimhoff.de
 
 
-set workApps to {"Mail", "Slack", "Microsoft Teams" }
+set workApps to {"Mail", "Microsoft Teams" }
 
 repeat with workApp in workApps
   tell application workApp
