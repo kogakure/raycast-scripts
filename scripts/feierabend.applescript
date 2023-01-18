@@ -15,7 +15,7 @@
 # @raycast.authorURL https://www.stefanimhoff.de
 
 
-set workApps to {"Mail", "Microsoft Teams" }
+set workApps to {"Microsoft Outlook", "Microsoft Teams" }
 
 repeat with workApp in workApps
   tell application workApp
@@ -23,6 +23,6 @@ repeat with workApp in workApps
   end tell
 end repeat
 
-do shell script "scutil --nc stop 'NWSE AMS1 VPN'"
+# do shell script "scutil --nc stop 'NWSE AMS1 VPN'"
 
 log "Feierabend! 🍺"
