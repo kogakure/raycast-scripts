@@ -15,11 +15,12 @@
 # @raycast.authorURL https://www.stefanimhoff.de
 
 
-set workApps to {"Mail", "Microsoft Teams (work or school)", "Figma" }
+set workApps to {"Figma", "Microsoft Teams (work or school)", "Mail" }
 
 repeat with workApp in workApps
   tell application workApp
     quit
+    delay 1
   end tell
 end repeat
 
