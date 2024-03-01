@@ -15,7 +15,7 @@
 # @raycast.authorURL https://www.stefanimhoff.de
 
 
-set workApps to {"Mail", "Microsoft Teams (work or school)", "Figma" }
+set workApps to { "Figma", "Microsoft Teams (work or school)", "Mail" }
 
 repeat with workApp in workApps
   tell application workApp
@@ -24,3 +24,5 @@ repeat with workApp in workApps
 end repeat
 
 # do shell script "scutil --nc start 'NWSE AMS1 VPN'"
+
+log "Ready to work! 🚀"
