@@ -13,6 +13,6 @@
 # @raycast.author Stefan Imhoff
 # @raycast.authorURL https://www.stefanimhoff.de
 
-fileicon set /Applications/WezTerm.app/ ~/.dotfiles/nix/home/wezterm/wezterm.icns
+fileicon set /Applications/WezTerm.app/ ~/.config/wezterm/terminal.icns
 
 echo "Icon replaced!"
