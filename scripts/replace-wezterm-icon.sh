@@ -13,6 +13,13 @@
 # @raycast.author Stefan Imhoff
 # @raycast.authorURL https://www.stefanimhoff.de
 
+# Check if fileicon is installed
+if ! command -v fileicon &>/dev/null; then
+	echo "fileicon not found. Installing..."
+	brew install fileicon
+fi
+
+# Replace WezTerm icon
 fileicon set /Applications/WezTerm.app/ ~/.config/wezterm/terminal.icns
 
 echo "Icon replaced!"
