@@ -15,7 +15,7 @@
 # @raycast.authorURL https://www.stefanimhoff.de
 
 
-set workApps to { "Figma", "Microsoft Teams (work or school)", "Mail" }
+set workApps to { "Figma", "Microsoft Teams", "Mail" }
 
 repeat with workApp in workApps
   tell application workApp
