@@ -19,6 +19,6 @@ TARGET="$(date +"%Y-%m-%d")"
 cd ~/Downloads
 mkdir $TARGET
 mv *.csv $TARGET
-mv "$TARGET" ~/Library/Mobile Documents/com~apple~CloudDocs/Backups/IMDb
+mv "$TARGET" ~/Library/Mobile\ Documents/com~apple~CloudDocs/Backups/IMDb
 
 open https://www.themoviedb.org/settings/import-list
