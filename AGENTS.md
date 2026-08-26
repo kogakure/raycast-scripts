@@ -47,10 +47,6 @@ Run it directly from the shell; there is no runner:
 
 AppleScript files are executable too and run through `osascript` via their shebang. Note that scripts touching real state (VPN, app quitting, file moves to backup folders) have side effects when tested.
 
-## Spell checking
-
-`cspell.json` holds the project dictionary. New German words, app names, or CLI tool names that appear in scripts should be added to its `words` array so cspell stays clean.
-
 ## Environment assumptions
 
 Scripts hardcode this machine's setup rather than being portable: a named VPN service (`NWSE AMS1 VPN` via `scutil --nc`), specific app names for the work-app start/stop scripts, a personal cloud backup directory, and `~/.config/wezterm`. Shell scripts that depend on a Homebrew binary check for it with `command -v` and `brew install` it if missing (see `scripts/replace-wezterm-icon.sh`). When editing, keep changes to these paths and service names minimal and intentional — they are user-specific configuration, not accidents.
